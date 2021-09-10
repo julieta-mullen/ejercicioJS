@@ -54,4 +54,42 @@ function calcularGasto (precioLtNafta, km) {
     return calcularNafta(km) * precioLtNafta
 }
 
-calcularGasto(3, 100)
+// Ejercicio 5
+
+// Crear un array que contenga números del 1 al 10. Retornar un nuevo array que contenga todos los números multiplicados por dos
+
+const arr = []
+for (let index = 0; index < 10; index++) {
+    arr.push(index + 1)
+}
+const newArr = arr.map(num => {
+    return num * 2
+})
+
+//  Ejercicio 6
+
+// Del array que devuelve el ejercicio número 5, filtrar los que sean mayores a 5
+
+const mayoresA5 = newArr.filter(num => num > 5)
+
+console.log(mayoresA5)
+
+//  Ejercicio 7
+
+// Del array que devuelve el ejercicio 6, buscar el primero que sea mayor a 10
+
+const primerMayorA10 = mayoresA5.find(num => num > 10)
+
+//  Ejercicio 8
+
+//  Dado el siguiente array filtremos a los pokemones con poder menor a 10.
+
+let pokemones = [ 
+    { nombre: 'pikachu', poder: 12 },
+     { nombre: 'bulbasaur', poder: 6 },
+     { nombre: 'charizard', poder: 19 },
+     { nombre: 'squirtle', poder: 3 },
+     { nombre: 'metwo', poder: 6 }, 
+    ]
+    
+const pokemonesPicantes = pokemones.filter(pokemon => pokemon.poder > 10)
