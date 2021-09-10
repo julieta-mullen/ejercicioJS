@@ -76,7 +76,7 @@ console.log(mayoresA5)
 
 //  Ejercicio 7
 
-// Del array que devuelve el ejercicio 6, buscar el primero que sea mayor a 10
+// Del array que devuelve el ejercicio 6, buscar el primero que sea mayor a 10.
 
 const primerMayorA10 = mayoresA5.find(num => num > 10)
 
